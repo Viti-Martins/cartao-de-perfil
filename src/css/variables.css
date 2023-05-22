@@ -1,0 +1,10 @@
+/* Colors variables */
+:root {
+    /* Primary colors */
+    --main-bg-color: hsl(185, 75%, 39%);
+    --titles: hsl(229, 23%, 23%);
+    --text-color: hsl(227, 10%, 46%);
+
+    /* Neutral color */
+    --neutral-color: hsl(0, 0%, 59%);
+}
