@@ -2,17 +2,33 @@
 
 body {
     background-color: var(--main-bg-color);
-    background: var(--main-bg-color) url(../images/bg-pattern-top.svg) no-repeat top left;
+    background: var(--main-bg-color) no-repeat top left;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
 }
 
-main {
+main.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 0 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg-top-pattern {
+    position: absolute;
+    top: -65%;
+    right: 50%;
+    z-index: 1;
+}
+
+.bg-bottom-pattern {
+    position: absolute;
+    bottom: -60%;
+    left: 50%;
+    z-index: 1;
 }
 
 .profile-card {
@@ -21,11 +37,12 @@ main {
     align-items: center;
     justify-content: space-between;
     gap: 25px;
-    background: white;
+    background: white url(../images/bg-pattern-card.svg) no-repeat;
     border-radius: 10px;
     margin: 20px;
     width: 330px;
     height: 350px;
+    z-index: 2;
 }
 
 .profile-card .user-info {
@@ -38,12 +55,12 @@ main {
 .profile-card .user-info .profile-picture {
     border-radius: 50%;
     margin: 17px 0;
+    border: 5px solid white;
 }
 
 .profile-card .user-info .user-name {
     font-weight: 700;
     color: var(--titles);
-    margin-bottom: 17px;
 }
 
 .profile-card .user-info .user-age {
@@ -53,7 +70,6 @@ main {
 .profile-card .user-info .user-city {
     font-weight: 400;
     color: var(--text-color);
-    margin-bottom: 17px;
 }
 
 
