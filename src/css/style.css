@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 body {
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
     background-color: var(--main-bg-color);
-    background: var(--main-bg-color) no-repeat top left;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    background-repeat: no-repeat, no-repeat;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
 }
@@ -17,7 +19,7 @@ main.container {
     position: relative;
 }
 
-.bg-top-pattern {
+/* .bg-top-pattern {
     position: absolute;
     top: -65%;
     right: 50%;
@@ -29,7 +31,7 @@ main.container {
     bottom: -60%;
     left: 50%;
     z-index: 1;
-}
+} */
 
 .profile-card {
     display: flex;
